@@ -1,0 +1,3 @@
+FPS = 60
+WIDTH = 1200
+HEIGHT = 800

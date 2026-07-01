@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://ca8ildgjkv7c6"]
+
+[ext_resource type="Script" uid="uid://bevko5ad3mcww" path="res://player.gd" id="1_xhfnw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0rwas"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_xhfnw"]
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_xhfnw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_0rwas")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+position = Vector2(-0.12500024, -0.12500072)
+scale = Vector2(20.25, 20.25)
+mesh = SubResource("QuadMesh_xhfnw")
